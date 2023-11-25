@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Experience from "./components/experience/experience";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <hr />
         <Experience></Experience>
       </main>
+      <footer>
+        <Contact></Contact>
+      </footer>
     </>
   );
 }

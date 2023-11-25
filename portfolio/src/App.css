@@ -1,5 +1,5 @@
 main {
-  margin: 0 12.5%;
+  padding: 0 12.5%;
 }
 
 li {
@@ -9,4 +9,7 @@ li {
 a {
   text-decoration: none;
   color: #000;
+}
+
+footer {
 }
