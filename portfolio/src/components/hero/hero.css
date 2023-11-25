@@ -1,0 +1,54 @@
+.hero {
+  padding: 5% 15%;
+  display: flex;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+img {
+  flex: 1;
+}
+
+p {
+  margin-top: 0;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.text a {
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  width: 130px;
+  padding: 10px 10px;
+  background: none;
+  border-radius: 50px;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text a:hover {
+  background: black;
+  color: white;
+  transition: 0.1s;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
+}

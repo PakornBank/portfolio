@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Outfit", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -7,4 +7,3 @@ body {
   margin: 0;
   /* background-color: black; */
 }
-
