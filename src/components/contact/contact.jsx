@@ -1,14 +1,14 @@
 import { getImageUrl } from "../../utils";
-import "./contact.css";
+import { ContactContainer, Text, Link } from "./ContactStyles";
 
 export default function Contact() {
   return (
-    <div className="contact" id="contact">
-      <div className="text">
+    <ContactContainer id="contact">
+      <Text>
         <h1>Contact</h1>
         <p>Feel free to reach out!</p>
-      </div>
-      <div className="link">
+      </Text>
+      <Link>
         <a href="mailto:pakorn22120@gmail.com">
           <img src={getImageUrl("contact/email.png")} alt="e-mail icon" />
           pakorn22120@gmail.com
@@ -21,7 +21,7 @@ export default function Contact() {
           <img src={getImageUrl("contact/phone.png")} alt="phone icon" />
           086-373-9707
         </a>
-      </div>
-    </div>
+      </Link>
+    </ContactContainer>
   );
 }

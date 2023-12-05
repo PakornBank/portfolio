@@ -1,16 +1,21 @@
-import "./navbar.css";
 import { getImageUrl } from "../../utils.js";
 import { useState } from "react";
+import {
+  NavBarContainer,
+  MenuItems,
+  MenuItem,
+  Menu,
+  MenuButton,
+} from "./NavbarStyles";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navBar">
+    <NavBarContainer>
       <a href="/">Portfolio</a>
-      <div className="menu">
-        <img
-          className="menuButton"
+      <Menu>
+        <MenuButton
           src={
             menuOpen
               ? getImageUrl("nav/closeIcon.png")
@@ -19,22 +24,19 @@ export default function Navbar() {
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <ul
-          className={`menuItems ${menuOpen && "menuOpen"}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
+        <MenuItems isOpen={menuOpen} onClick={() => setMenuOpen(false)}>
+          <MenuItem>
             <a href="#about">About</a>
-          </li>
-          {/* <li><a href="#education">Education</a></li> */}
-          <li>
+          </MenuItem>
+          {/* <MenuItem><a href="#education">Education</a></MenuItem> */}
+          <MenuItem>
             <a href="#experience">Experience</a>
-          </li>
-          <li>
+          </MenuItem>
+          <MenuItem>
             <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          </MenuItem>
+        </MenuItems>
+      </Menu>
+    </NavBarContainer>
   );
 }

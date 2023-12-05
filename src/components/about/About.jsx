@@ -1,15 +1,11 @@
-import { getImageUrl } from "../../utils";
-import "./about.css";
+import { AboutContainer, Container, Text } from "./AboutStyles";
 
 export default function About() {
   return (
-    <div className="about" id="about">
+    <AboutContainer id="about">
       <h1>About</h1>
-      <div className="container">
-        <div className="image">
-          <img src={getImageUrl("about/me.png")} alt="Another photo of me" />
-        </div>
-        <ul className="text">
+      <Container>
+        <Text>
           <li>
             <h2>What can I do?</h2>
             <p>
@@ -36,8 +32,8 @@ export default function About() {
               environment.
             </p>
           </li>
-        </ul>
-      </div>
-    </div>
+        </Text>
+      </Container>
+    </AboutContainer>
   );
 }
