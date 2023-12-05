@@ -1,8 +1,8 @@
 import "./App.css";
-import Hero from "./components/hero/hero";
-import About from "./components/about/about";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
-import Contact from "./components/contact/contact";
+import Contact from "./components/contact/Contact";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
