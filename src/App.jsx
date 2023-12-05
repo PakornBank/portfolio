@@ -16,9 +16,7 @@ function App() {
         <hr />
         <Experience></Experience>
       </main>
-      <footer>
-        <Contact></Contact>
-      </footer>
+      <Contact></Contact>
     </>
   );
 }
