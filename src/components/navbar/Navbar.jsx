@@ -6,7 +6,7 @@ import {
   MenuItem,
   Menu,
   MenuButton,
-} from "./NavbarStyles";
+} from "./NavbarStyles.jsx";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
