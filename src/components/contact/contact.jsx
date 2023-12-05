@@ -8,6 +8,7 @@ export default function Contact() {
         <h1>Contact</h1>
         <p>Feel free to reach out!</p>
       </Text>
+
       <Link>
         <a href="mailto:pakorn22120@gmail.com">
           <img src={getImageUrl("contact/email.png")} alt="e-mail icon" />
