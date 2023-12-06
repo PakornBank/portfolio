@@ -1,3 +1,4 @@
 # Portfolio
 
-This is my portfolio website created using HTML, React and styled-components, and deployed by netlify.
+This is my portfolio website created using React, and deployed by netlify.
+This is one of my projects done while I'm learning React.
