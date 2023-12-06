@@ -28,9 +28,15 @@ export default function Navbar() {
           <MenuItem>
             <a href="#about">About</a>
           </MenuItem>
-          {/* <MenuItem><a href="#education">Education</a></MenuItem> */}
+
           <MenuItem>
             <a href="#experience">Experience</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="#education">Education</a>
+          </MenuItem>
+          <MenuItem>
+            <a href="#projects">Project</a>
           </MenuItem>
           <MenuItem>
             <a href="#contact">Contact</a>
