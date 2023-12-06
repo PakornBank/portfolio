@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.footer`
   color: white;
   background-color: black;
-  padding: 2.5% 12.5% 5% 12.5%;
+  padding: 2.5% 12.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -11,6 +11,7 @@ export const ContactContainer = styled.footer`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5%;
     p {
       text-align: center;
       margin: 0 0 15px 0;

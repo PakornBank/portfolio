@@ -1,12 +1,4 @@
 import styled from "styled-components";
-import React from "react";
-
-// This is for filtering out props to pass to the styled component
-const withFilteredProps = (Component) => {
-  return ({ isOpen, ...props }) => {
-    return <Component {...props} />;
-  };
-};
 
 export const NavBarContainer = styled.nav`
   a {
@@ -27,14 +19,14 @@ export const NavBarContainer = styled.nav`
   }
 `;
 
-const StyledMenuItems = styled.ul`
+export const MenuItems = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
 
   @media screen and (max-width: 768px) {
-    display: ${(props) => (props.isOpen ? "flex" : "none")};
+    display: ${(props) => (props.$isOpen ? "flex" : "none")};
     margin: 0;
     padding: 20px 30px;
     flex-direction: column;
@@ -50,8 +42,6 @@ const StyledMenuItems = styled.ul`
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   }
 `;
-
-export const MenuItems = withFilteredProps(StyledMenuItems);
 
 export const MenuItem = styled.li`
   list-style-type: none;

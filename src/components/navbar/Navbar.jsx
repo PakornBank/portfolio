@@ -6,7 +6,7 @@ import {
   MenuItem,
   Menu,
   MenuButton,
-} from "./NavbarStyles.jsx";
+} from "./NavbarStyles.js";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Navbar() {
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <MenuItems isOpen={menuOpen} onClick={() => setMenuOpen(false)}>
+        <MenuItems $isOpen={menuOpen} onClick={() => setMenuOpen(false)}>
           <MenuItem>
             <a href="#about">About</a>
           </MenuItem>
