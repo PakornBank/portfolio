@@ -5,6 +5,7 @@ import Experience from "./components/experience/Experience.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Projects from "./components/projects/Projects.jsx";
+import Education from "./components/education/Education.jsx";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <About></About>
         <hr />
         <Experience></Experience>
+        <hr />
+        <Education></Education>
         <hr />
         <Projects></Projects>
       </main>
