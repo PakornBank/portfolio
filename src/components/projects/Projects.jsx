@@ -1,6 +1,6 @@
 import { ProjectsContainer, CardsContainer } from "./ProjectsStyles";
 import Card from "../Cards/Card";
-import LinkButton from "../Buttons/LinkButton.jsx";
+import LinkButton from "../buttons/LinkButton.jsx";
 import { getImageUrl } from "../../utils";
 
 export default function Projects() {
