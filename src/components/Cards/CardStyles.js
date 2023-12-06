@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   width: ${(props) => (props.$width ? props.$width : "auto")};
   height: ${(props) => (props.$height ? props.$height : "auto")};
-  padding: 20px 20px 5px 20px;
+  padding: 20px;
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
@@ -24,6 +24,10 @@ export const CardContainer = styled.div`
   h3 {
     font-weight: 400;
   }
+  ul {
+    margin-bottom: 0;
+  }
+
   li {
     list-style-type: initial;
   }
