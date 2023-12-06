@@ -6,8 +6,8 @@ import {
   Icon,
   IconBackground,
   Cards,
-  Card,
 } from "./ExperienceStyles";
+import Card from "../Cards/Card";
 
 export default function Experience() {
   return (
@@ -73,8 +73,7 @@ export default function Experience() {
           </Icon>
         </Icons>
         <Cards>
-          <Card>
-            <img src={getImageUrl("experience/posn.jpg")} alt="" />
+          <Card imageLink={getImageUrl("experience/posn.jpg")}>
             <h2>Computer Olympiad Camp</h2>
             <h3>CMU, 2021</h3>
             <ul>

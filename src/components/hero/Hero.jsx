@@ -1,4 +1,5 @@
 import { getImageUrl } from "../../utils.js";
+import LinkButton from "../buttons/LinkButton.jsx";
 
 import {
   HeroContainer,
@@ -20,7 +21,7 @@ export default function Hero() {
           my journey as a developer. Right now, I'm pursuing a career in web
           development.
         </p>
-        <a href="#contact">Contact Me</a>
+        <LinkButton link={"#contact"}>Contact Me</LinkButton>
       </Text>
       <ImageContainer>
         <StyledImage src={getImageUrl("hero/me.jpeg")} alt="Photo of me" />

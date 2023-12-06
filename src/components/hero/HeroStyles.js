@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   color: black;
-  padding: 5% 0;
+  margin: 5% 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -23,30 +23,11 @@ export const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 0;
-  // margin-right: 30px;
   font-size: 20px;
   gap: 20px;
 
-  a {
-    text-align: center;
-    border: 2px solid black;
-    color: black;
-    text-decoration: none;
-    width: 130px;
-    padding: 10px 10px;
-    background: none;
-    border-radius: 50px;
-    font-family: "Outfit";
-    font-weight: 600;
-    font-size: 20px;
-
-    &:hover {
-      background: black;
-      color: white;
-      transition: 0.1s;
-    }
-  }
   h1 {
     margin: 0;
   }
