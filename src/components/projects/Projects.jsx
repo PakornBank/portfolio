@@ -5,7 +5,7 @@ import { getImageUrl } from "../../utils";
 
 export default function Projects() {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <h1>Project</h1>
       <CardsContainer>
         <Card
